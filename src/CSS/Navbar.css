@@ -1,0 +1,11 @@
+.nav{
+    display: flex;
+    flex: auto;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    background-color: rgb(35, 177, 35);
+    padding-top: 10px;
+    padding-bottom: 10px;
+  
+}
