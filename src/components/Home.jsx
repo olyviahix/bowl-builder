@@ -7,7 +7,7 @@ const Home = () =>{
     return(
         <div class='home'>
             <h1>Welcome to Build A Bowl!</h1>
-            <h3>NEW! LeanFeast Bowl Builder with Macro count!</h3>
+            <h3>NEW! LeanFeast Bowl Builder with Macro !</h3>
           
         </div>
     )

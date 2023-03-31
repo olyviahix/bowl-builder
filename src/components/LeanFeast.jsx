@@ -1,13 +1,33 @@
 import Form from 'react-bootstrap/Form';
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'
-import { useEffect } from 'react';
-
+import { useState,useEffect } from 'react';
+import axios from 'axios';
+import useGoogleSheets from 'use-google-sheets';
+import Test from './FormOption';
+// API KEY: AIzaSyDmcXeNM5sRiG9z7dvyj7aCfxcox5Jsp7k
 
 function LeanFeast() {
+  const [protienOptionsArr, setProtienOptionsArr] = useState([])
+
+  
+
+  const { data, loading, error } = useGoogleSheets({
+    apiKey: 'AIzaSyDmcXeNM5sRiG9z7dvyj7aCfxcox5Jsp7k',
+    sheetId: '1U8Ync9ZnUeGqF06lgiGITMCgXb70RYX_vean31rNBFE',
+    sheetsOptions: [{ id: 'BAB-protein' }],
+  });
+  console.log(data)
+
+  if (data[0]) {
+    var protienOptionsArray=data[0].data
+  }
+
   return (
     <div class='LeanFeast'>
     <Form.Select aria-label="Default select example">
+      {/* {data[0].data} */}
+      
       <option>Select From Protiens</option>
       <option value="1">Ground Beef</option>
       <option value="2">Ground Turkey</option>
