@@ -5,12 +5,10 @@ import { useState,useEffect } from 'react';
 import axios from 'axios';
 import useGoogleSheets from 'use-google-sheets';
 import Test from './FormOption';
-// API KEY: AIzaSyDmcXeNM5sRiG9z7dvyj7aCfxcox5Jsp7k
+import bowl from '../images/bowl.jpeg'
 
 function LeanFeast() {
   const [protienOptionsArr, setProtienOptionsArr] = useState([])
-
-  
 
   const { data, loading, error } = useGoogleSheets({
     apiKey: 'AIzaSyDmcXeNM5sRiG9z7dvyj7aCfxcox5Jsp7k',
@@ -25,6 +23,7 @@ function LeanFeast() {
 
   return (
     <div class='LeanFeast'>
+      
     <Form.Select aria-label="Default select example">
       {/* {data[0].data} */}
       
@@ -44,6 +43,7 @@ function LeanFeast() {
       <option value="13">Plant Based Nuggets</option>
       <option value="14">Plant Based Patties</option>
     </Form.Select>
+    <img src={bowl}/>
     </div>
   );
 }

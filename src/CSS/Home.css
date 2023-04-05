@@ -3,3 +3,8 @@
     flex-direction: column;
     text-align: center;
 }
+
+.font{
+    font-family: 'Staatliches';
+/* font-family: 'DM Serif Display', serif, cursive' */
+}

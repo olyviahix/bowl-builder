@@ -1,3 +1,4 @@
 .LeanFeast{
-    
+    display: flex;
+    flex-direction: column;
 }
