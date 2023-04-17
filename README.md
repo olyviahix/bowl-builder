@@ -1,70 +1,31 @@
-# Getting Started with Create React App
+# Build A Bowl
+Bowl Building App - Olyvia Hix
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Build A Bowl is an app in progress that will allow a user to go to a site and add specific amounts of protiens, carbs, fats, veggies and toppings to a bowl and it will calculate the total Macros for you! This is a simple app for someone who is a fitness inthusiast and needs to track their intake, or for anyone who simply wants to track certain aspects of a meal. This app is in progress and will be able to have all of these functions in the future.
+The full intention of this app is to build it so it can be added to an already functioning restaraunt such as LeanFeast and/or Qdoba or any other business that has a "bowl building" meal. 
+This app also pulls from an API that shows you the weather at the local LeanFeast location in Los Angeles CA at any given time. 
 
-## Available Scripts
+This project was built as a front-end, React.JS project. Routing and React skills were tested throughout. The technologies that were used in this project are are JavaScript, HTML, and CSS. This project is a front end only project, so when you refresh, you will lose what you have put into your options.
 
-In the project directory, you can run:
+Some challenges that I faced during this project were calling from a Google Sheets API. I have the option to select the protien from a dropdown, and it will show up in the "right click, inspect" portion of the server. I am having a hard time displaying the selected Macro count on the screen. This part is a work in progress for the future.
 
-### `npm start`
+Some favorite aspects of this project that I incorporated is the simple yet eye catching styling. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+I plan on working more to expand this project to have a log in as well as being able to incorporate this into a company that can use this on their own website.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# How To Run Build A Bowl
 
-### `npm test`
+If working in VSCode, once downloaded the project, in any file right click and "Run With Live Server". This will start the app in the browser and run it live.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# How To Use Build A Bowl
 
-### `npm run build`
+While in the project, you will see a navigation bar with options to click on. The LeanFeast tab in the navbar will take you to a page that allows you to choose a protien (more options like fats, carbs, toppings, etc. to come) and it will pull from a google sheets API and display the Macro total count on the screen. 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Contributers
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+I was the sole contributer to this project and am still in the process of developing it. 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
